@@ -21,7 +21,7 @@ def compile(all_flags, blocks, start_block):
 
         `(required_flags, symbol, new_symbol, direction, (new_label, new_flags))`
 
-    A flag can be either a name ("flag") or the negation of the name ("~flag").
+    A flag can be either a name ("flag") or the negation of the name ("!flag").
     A transition is executed if all the flags in `required_flags` match. Upon
     execution, the existing flags are *overwritten* by `new_flags` if they are
     referenced. If they are not referenced, the previous flag's state is kept.
